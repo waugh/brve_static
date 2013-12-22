@@ -98,6 +98,9 @@ puts "RUBYOPT = -I."
 new_entry "tgts:#{tgt_dirs_string} #{tgts_string}"
 tab "ruby $(RUBYOPT) tell_photo_width.rb"
 
+new_entry 'images:'
+tab 'test -d $@ || mkdir $@'
+
 
 
 new_entry "list: . left right our_articles others_articles"

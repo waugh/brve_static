@@ -2,8 +2,11 @@
 
 RUBYOPT = -I.
 
-tgts: ../public ../public/img ../public/our_articles ../public/others_articles  ../public/style.css ../public/index.html ../public/our_articles/with_reasons.html ../public/our_articles/provisions.html
+tgts: ../public ../public/img ../public/our_articles ../public/others_articles  ../public/style.css ../public/index.html ../public/our_articles/provisions.html ../public/our_articles/with_reasons.html
 	ruby $(RUBYOPT) tell_photo_width.rb
+
+images:
+	test -d $@ || mkdir $@
 
 list: . left right our_articles others_articles
 	ls *.rb >$@.t
@@ -42,12 +45,12 @@ pristeen: clean
 	ruby $(RUBYOPT) index.html.rb >$@.t
 	mv $@.t $@
 
-../public/our_articles/with_reasons.html: our_articles/with_reasons.html.rb common.rb env.rb
-	ruby $(RUBYOPT) our_articles/with_reasons.html.rb >$@.t
-	mv $@.t $@
-
 ../public/our_articles/provisions.html: our_articles/provisions.html.rb common.rb env.rb
 	ruby $(RUBYOPT) our_articles/provisions.html.rb >$@.t
+	mv $@.t $@
+
+../public/our_articles/with_reasons.html: our_articles/with_reasons.html.rb common.rb env.rb
+	ruby $(RUBYOPT) our_articles/with_reasons.html.rb >$@.t
 	mv $@.t $@
 
 Makefile: Makefile.rb common.rb images *articles* env.rb
