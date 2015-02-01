@@ -2,19 +2,11 @@
 
 RUBYOPT = -I.
 
-tgts: ../public ../public/img ../public/our_articles ../public/others_articles  ../public/style.css ../public/index.html ../public/our_articles/provisions.html ../public/our_articles/with_reasons.html
+tgts: ../public ../public/img ../public/our_articles  ../public/style.css ../public/index.html ../public/our_articles/provisions.html
 	ruby $(RUBYOPT) tell_photo_width.rb
 
 images:
 	test -d $@ || mkdir $@
-
-list: . left right our_articles others_articles
-	ls *.rb >$@.t
-	ls left/*.rb >>$@.t
-	ls right/*.rb >>$@.t
-	ls our_articles/*.rb >>$@.t
-	ls others_articles/*.rb >>$@.t
-	mv $@.t $@
 
 try: tgts
 	firefox ../public/index.html >/dev/null 2>&1&
@@ -34,9 +26,6 @@ pristeen: clean
 ../public/our_articles:
 	test -d $@ || mkdir $@
 
-../public/others_articles:
-	test -d $@ || mkdir $@
-
 ../public/style.css: style.css.rb common.rb env.rb
 	ruby $(RUBYOPT) style.css.rb >$@.t
 	mv $@.t $@
@@ -47,10 +36,6 @@ pristeen: clean
 
 ../public/our_articles/provisions.html: our_articles/provisions.html.rb common.rb env.rb
 	ruby $(RUBYOPT) our_articles/provisions.html.rb >$@.t
-	mv $@.t $@
-
-../public/our_articles/with_reasons.html: our_articles/with_reasons.html.rb common.rb env.rb
-	ruby $(RUBYOPT) our_articles/with_reasons.html.rb >$@.t
 	mv $@.t $@
 
 Makefile: Makefile.rb common.rb images *articles* env.rb

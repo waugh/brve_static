@@ -63,7 +63,7 @@ specified_tgts = [
 
 images = filenames_in_dir_named "images"
 tgt_images = images.map {|e| "img/#{e}"}
-articles_dirs_names = ["our_articles", "others_articles"]
+articles_dirs_names = ["our_articles"] # "others_articles"
 other_public_dirs = [ "img",
 ]
 tgt_dirs = ["../public"] +
@@ -100,15 +100,6 @@ tab "ruby $(RUBYOPT) tell_photo_width.rb"
 
 new_entry 'images:'
 tab 'test -d $@ || mkdir $@'
-
-
-
-new_entry "list: . left right our_articles others_articles"
-tab "ls *.rb >$@.t"
-%w(left right our_articles others_articles).each do |e|
-  tab "ls #{e}/*.rb >>$@.t"
-end
-commit
 
 new_entry "try: tgts"
 tab "firefox ../public/index.html >/dev/null 2>&1&"
