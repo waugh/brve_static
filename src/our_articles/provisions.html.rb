@@ -10,13 +10,7 @@ article "Bill of Rights for Voting Equality (BRVE) brave", :depth => 1 do
   # Hand edited it a little, too.
   puts <<'!'
 <p>[Revised Friday, August 1, 2014 at 10:12am ET]</p>
-<p>Please support us by signing the petition, sharing the petition,
-joining us on facebook to crowd source ideas to get this
-amendment some attention and ultimately get it enacted &nbsp;<a
-href="http://change.org/petitions/bill-of-rights-for-voting-equality"
-target="_blank" rel="nofollow">http://change.org/petitions/bill-of-rights-for-voting-equality</a>
-&nbsp;the reasons behind each entry are listed at the
-petition as well.</p><p>&nbsp;</p><p><strong>Whereas we the
+<p><strong>Whereas we the
 people are created equal, and</strong></p><p><strong>whereas
 we the people are endowed with certain inalienable rights,
 and</strong></p><p><strong>whereas we the people instituted a
