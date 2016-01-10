@@ -18,6 +18,10 @@ class << $env
     parent.tag *args, &y
   end
   def emit_emblem
+    tag :img, :src =>
+      "https://d22r54gnmuhwmk.cloudfront.net/photos/1/rg/dn/" +
+      "dyRGDnHfdnKNjVQ-800x450-noPad.jpg?1423803260",
+      :style => "max-width: 100%"
   end
   if false
     def emit_emblem

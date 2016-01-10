@@ -39,10 +39,10 @@ class << self
         tr :height => "100%" do
           td :valign => "bottom" do
             p do
-              $env.nav_first.call if $env.nav_first
+              $env.nav_first.call({}) if $env.nav_first
               $env.nav_rest.each do |e|
                 text "|"
-                e.call
+                e.call({}) # arg is options
               end # each
             end # p
           end # td
