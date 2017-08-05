@@ -303,7 +303,7 @@ class << self
             text $env.title
               # :href => "index.html"
           end # p
-          # tag :img, :src => pfx + "img/happy_human.gif"
+          $env.emit_emblem
         end # div for centering
       end # if-else for standard or custom sidebar
     end unless options[:no_sidebar] # div.sidebar
