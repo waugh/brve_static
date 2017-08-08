@@ -24,22 +24,22 @@ Each citizen of the United States at or exceeding the age of majority has the ri
   p <<'!'
 2. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 a) All citizens of the United States, residing in all states, shall have equal access, (the same requirements), to creating a political party and achieving a ballot line. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 b) All candidates and parties shall have equal time constraints to qualify for ballot access. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 c) All proofs will be received by a multi-partisan regulatory board, such as the Board of Elections. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 d) All citizens that desire to be candidates, shall register at their local Board of Elections. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 e) The Board of Elections shall divide equally, the campaign tools for election purposes. All tools must be properly labeled as having been provided by the revenue stream and not a direct private donation. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 f) Corporations are NOT people and Money is not speech. Elections shall be publicly funded. No private money may be used for a public office, or seat in the government. The citizen must have full confidence that no bribery or appearance of bribery is taking place.
 !
   p <<'!'
@@ -53,16 +53,16 @@ All citizens must be able to verify that the vote has been counted accurately. A
   p <<'!'
 5. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 a) The Number of Representatives shall not exceed one for every Thirty Thousand, per state.
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 b) Each state shall divide its population by 30,000 to determine its number of representatives. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 c) Each Representative shall have the voting power equal to the number of citizens that voted for them. 
 !
-  p <<'!'
+  p <<'!', class: 'indent'
 d) Congress shall be unicameral, and the Senate shall be dissolved. 
 !
   p <<'!'
