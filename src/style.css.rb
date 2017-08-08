@@ -255,6 +255,10 @@ p, li {
   padding-left:  .5em;
   padding-right: .6em;
 }
+.article p.indent {
+  padding-left: 2em;
+  text-indent: -1.5em;
+}
 .article p .first_word {
   font-size: 14pt;
   font-weight: 100;
